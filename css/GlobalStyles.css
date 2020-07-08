@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/*
+  SL - Server List
+  SN - Server name
+  CI - Channel Info
+  CL - CHANNEL LIST
+  CD - CHANNEL DATA
+*/
+
+#root {
+  display: grid;
+
+  grid-template-columns: 71px 360px auto 340px;
+  grid-template-rows: 70px auto 52px;
+
+  grid-template-areas:
+    "SL SN CI CI"
+    "SL CL CD UL"
+    "SL UI CD UL";
+
+  height: 100vh;
+}
+
+header {
+  background: yellow;
+  grid-area: CI;
+}
+
+aside {
+  background: #212134;
+  grid-area: SL;
+}
+
+div#server-name {
+  background: #3b3636;
+  grid-area: SN;
+}
+
+div#server-list {
+  background: #fc8d8d;
+  grid-area: CL;
+}
+
+div#user-info {
+  background: #f25;
+  grid-area: UI;
+}
+
+main {
+  background: #6e6b6b;
+  grid-area: CD;
+}
+
+article {
+  background: #7159c1;
+  grid-area: UL;
+}
