@@ -17,3 +17,5 @@ CSS grid for WEB in genisis project
 - 600 `PX`
 
 ![litle - IMAGE](./assets/600.PNG)
+
+[AUTHOR](https://github.com/eliasallex)
